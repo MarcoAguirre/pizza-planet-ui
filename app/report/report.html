@@ -55,9 +55,9 @@
                 <table id="sizes" class="table bg-white table-bordered table-hover">
                     <thead class="thead-dark">
                         <tr class="d-flex">
-                            <th class="col-2 text-center">Most loyal customer</th>
-                            <th class="col-4 text-center">Most requested ingredient</th>
-                            <th class="col-3 text-center">Most renueved month</th>
+                            <th class="col-5 text-center">Most loyal customer</th>
+                            <th class="col-3 text-center">Most requested ingredient</th>
+                            <th class="col-4 text-center">Most renueved month</th>
                         </tr>
                     </thead>
                     <tbody></tbody>
@@ -68,9 +68,9 @@
 
     <template id="size-item-template">
         <tr class="d-flex">
-            <td class="col-2 text-center">{{customer[0].name}}</td>
-            <td class="col-4">{{ingredient.name}}</td>
-            <td class="col-3">${{month.month_number}} with ${{month.total}}</td>
+            <td class="col-5 text-center">{{customer[0].name}}</td>
+            <td class="col-3">{{ingredient.name}}</td>
+            <td class="col-4">{{month.month_number}} with {{month.total}}</td>
         </tr>
     </template>
 
