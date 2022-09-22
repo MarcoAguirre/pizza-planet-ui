@@ -55,7 +55,7 @@
                 <table id="report" class="table bg-white table-bordered table-hover">
                     <thead class="thead-dark">
                         <tr class="d-flex">
-                            <th class="col-5 text-center">Most loyal customer</th>
+                            <th class="col-5 text-center">Most loyal customers</th>
                             <th class="col-3 text-center">Most requested ingredient</th>
                             <th class="col-4 text-center">Most renueved month</th>
                         </tr>
@@ -68,7 +68,13 @@
 
     <template id="report-item-template">
         <tr class="d-flex">
-            <td class="col-5 text-center">{{customer[0].name}}</td>
+            <td class="col-5 text-center">
+                <ul>
+                    <li>{{customer.0.name}}</li>
+                    <li>{{customer.1.name}}</li>
+                    <li>{{customer.2.name}}</li>
+                </ul>
+            </td>
             <td class="col-3">{{ingredient.name}}</td>
             <td class="col-4">{{month.month_number}} with {{month.total}}</td>
         </tr>
