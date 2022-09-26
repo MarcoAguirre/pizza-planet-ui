@@ -92,8 +92,9 @@
     <table class="table bg-white table-bordered">
       <thead class="thead-dark">
         <tr>
-          <th class="w-50">Size</th>
-          <th class="w-50">Ingredients</th>
+          <th class="w-45">Size</th>
+          <th class="w-34">Ingredients</th>
+          <th class="w-34">Beverages</th>
         </tr>
       </thead>
       <tbody>
@@ -104,6 +105,11 @@
           <td id="ingredients">
             {{#detail}}
             <p>{{ingredient.name}} - ${{ingredient_price}}</p>
+            {{/detail}}
+          </td>
+          <td id="beverages">
+            {{#detail}}
+            <p>{{beverage.name}} - ${{beverage_price}}</p>
             {{/detail}}
           </td>
         </tr>
