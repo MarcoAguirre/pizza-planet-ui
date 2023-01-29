@@ -1,6 +1,6 @@
 
 
-fetch('http://127.0.0.1:5000/ingredient')
+fetch('https://pizza-planet.herokuapp.com/ingredient')
     .then(response => response.json())
     .then(ingredients => {
         let rows = ingredients.map(element => createIngredientTemplate(element));

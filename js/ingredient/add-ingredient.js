@@ -1,6 +1,6 @@
 function postIngredient(ingredient) {
 
-    fetch('http://127.0.0.1:5000/ingredient/', {
+    fetch('https://pizza-planet.herokuapp.com/ingredient/', {
         method: 'POST',
         body: JSON.stringify(ingredient),
         headers: {

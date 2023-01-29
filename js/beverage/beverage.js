@@ -1,4 +1,4 @@
-fetch("http://127.0.0.1:5000/beverage")
+fetch("https://pizza-planet.herokuapp.com/beverage")
     .then(response => response.json())
     .then(beverages => {
         let rows = beverages.map((element) => createBeverageTemplate(element));
