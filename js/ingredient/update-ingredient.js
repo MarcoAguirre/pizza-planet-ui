@@ -1,6 +1,6 @@
 
 function fetchIngredient(_id) {
-    fetch(`https://pizza-planet.herokuapp.com/ingredient/id/${_id}`)
+    fetch(`http://127.0.0.1:5000/ingredient/id/${_id}`)
         .then(response => response.json())
         .then(ingredient => {
             $("#_id").val(ingredient._id);
@@ -18,7 +18,7 @@ function loadInformation() {
 
 function putIngredient(ingredient) {
 
-    fetch('https://pizza-planet.herokuapp.com/ingredient/', {
+    fetch('http://127.0.0.1:5000/ingredient/', {
         method: 'PUT',
         body: JSON.stringify(ingredient),
         headers: {

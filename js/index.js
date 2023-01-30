@@ -5,7 +5,7 @@
 
 function postOrder(order) {
 
-    fetch('https://pizza-planet.herokuapp.com/order/', {
+    fetch('http://127.0.0.1:5000/order/', {
         method: 'POST',
         body: JSON.stringify(order),
         headers: {
@@ -69,7 +69,7 @@ function showNotification() {
 // Gather information in a dynamic way
 
 function fetchIngredients() {
-    fetch('https://pizza-planet.herokuapp.com/ingredient/')
+    fetch('http://127.0.0.1:5000/ingredient/')
         .then(response => response.json())
         .then(ingredients => {
             let rows = ingredients.map(element => createIngredientTemplate(element));
@@ -79,7 +79,7 @@ function fetchIngredients() {
 }
 
 function fetchBeverages() {
-    fetch("https://pizza-planet.herokuapp.com/beverage")
+    fetch("http://127.0.0.1:5000/beverage")
         .then(response => response.json())
         .then((beverages) => {
             let rows = beverages.map(element => createBeverageTemplate(element));
@@ -89,7 +89,7 @@ function fetchBeverages() {
 }
 
 function fetchOrderSizes() {
-    fetch('https://pizza-planet.herokuapp.com/size/')
+    fetch('http://127.0.0.1:5000/size/')
         .then(response => response.json())
         .then(sizes => {
             let rows = sizes.map(element => createSizeTemplate(element));

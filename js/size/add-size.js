@@ -1,6 +1,6 @@
 function postSize(size) {
 
-    fetch('https://pizza-planet.herokuapp.com/size/', {
+    fetch('http://127.0.0.1:5000/size/', {
         method: 'POST',
         body: JSON.stringify(size),
         headers: {
